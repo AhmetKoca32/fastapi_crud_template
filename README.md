@@ -30,48 +30,48 @@ uvicorn main:app --reload
 - Swagger UI: http://localhost:8000/docs
 - ReDoc: http://localhost:8000/redoc
 
-## Task Listesi
+## Task Listesi ve İlerleme Durumu
 
-### 1. Temel CRUD İşlemleri
-- [x] User modeli için CRUD endpoint'leri oluşturun (create, read, update, delete)
-- [ ] Item modeli için CRUD endpoint'leri oluşturun
-- [ ] Kullanıcıya özel item'ları listeleyen endpoint ekleyin
+### 1. Temel CRUD İşlemleri ✅
+- ✅ User modeli için CRUD işlemleri
+- ⬜ Item modeli için CRUD işlemleri
+- ⬜ Kullanıcıya özel item'ları listeleme
 
-### 2. Authentication ve Authorization
-- [ ] JWT token tabanlı authentication sistemi implementasyonu
-- [ ] Password hashing ve doğrulama
-- [ ] Protected route'lar oluşturun
-- [ ] Token yenileme mekanizması ekleyin
+### 2. Authentication ve Authorization ⏳
+- ⬜ JWT token tabanlı authentication sistemi
+- ⬜ Password hashing ve doğrulama
+- ⬜ Protected route'lar
+- ⬜ Token yenileme mekanizması
 
-### 3. Validation ve Error Handling
-- [ ] Input validation için Pydantic modellerini genişletin
-- [ ] Custom exception handler'lar ekleyin
-- [ ] Rate limiting implementasyonu yapın
+### 3. Validation ve Error Handling ⏳
+- ⬜ Input validation için Pydantic modellerini genişletme
+- ⬜ Custom exception handler'lar
+- ⬜ Rate limiting implementasyonu
 
-### 4. Database ve Migration
-- [ ] Alembic ile database migration sistemi kurun
-- [ ] Seed data oluşturun
-- [ ] Database backup sistemi ekleyin
+### 4. Database ve Migration ⏳
+- ⬜ Alembic ile database migration sistemi
+- ⬜ Seed data oluşturma
+- ⬜ Database backup sistemi
 
-### 5. Testing
-- [ ] Unit testler yazın
-- [ ] Integration testler ekleyin
-- [ ] API endpoint'leri için test coverage raporu oluşturun
+### 5. Testing ⏳
+- ⬜ Unit testler
+- ⬜ Integration testler
+- ⬜ API endpoint'leri için test coverage
 
-### 6. API Geliştirmeleri
-- [ ] Pagination implementasyonu
-- [ ] Filtering ve sorting özellikleri ekleyin
-- [ ] API versiyonlama sistemi kurun
+### 6. API Geliştirmeleri ⏳
+- ⬜ Pagination implementasyonu
+- ⬜ Filtering ve sorting özellikleri
+- ⬜ API versiyonlama sistemi
 
-### 7. Güvenlik
-- [ ] CORS ayarlarını yapılandırın
-- [ ] Rate limiting ekleyin
-- [ ] Input sanitization implementasyonu yapın
+### 7. Güvenlik ⏳
+- ⬜ CORS ayarları
+- ⬜ Rate limiting
+- ⬜ Input sanitization
 
-### 8. Monitoring ve Logging
-- [ ] Logging sistemi kurun
-- [ ] Performance monitoring ekleyin
-- [ ] Health check endpoint'lerini genişletin
+### 8. Monitoring ve Logging ⏳
+- ⬜ Logging sistemi
+- ⬜ Performance monitoring
+- ⬜ Health check endpoint'leri
 
 ## Proje Yapısı
 
