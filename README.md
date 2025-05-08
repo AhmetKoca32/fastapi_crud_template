@@ -33,7 +33,7 @@ uvicorn main:app --reload
 ## Task Listesi
 
 ### 1. Temel CRUD İşlemleri
-- [ ] User modeli için CRUD endpoint'leri oluşturun (create, read, update, delete)
+- [x] User modeli için CRUD endpoint'leri oluşturun (create, read, update, delete)
 - [ ] Item modeli için CRUD endpoint'leri oluşturun
 - [ ] Kullanıcıya özel item'ları listeleyen endpoint ekleyin
 
@@ -84,3 +84,18 @@ uvicorn main:app --reload
 ├── requirements.txt  # Proje bağımlılıkları
 └── README.md         # Proje dokümantasyonu
 ```
+
+## API Endpoints
+
+### User Endpoints
+- `POST /users/` - Yeni kullanıcı oluşturma
+- `GET /users/` - Tüm kullanıcıları listeleme
+- `GET /users/{user_id}` - Belirli bir kullanıcının bilgilerini getirme
+- `PUT /users/{user_id}` - Kullanıcı bilgilerini güncelleme
+- `DELETE /users/{user_id}` - Kullanıcı silme
+
+## Notlar
+
+- Her task'ı tamamladıktan sonra test etmeyi unutmayın
+- Kod kalitesi ve best practice'lere dikkat edin
+- Her değişikliği commit'leyin ve açıklayıcı commit mesajları yazın

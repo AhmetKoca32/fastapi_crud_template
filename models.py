@@ -1,7 +1,7 @@
 from sqlalchemy import Boolean, Column, ForeignKey, Integer, String, DateTime
 from sqlalchemy.orm import relationship
 from database import Base
-from datetime import datetime
+from datetime import datetime, UTC
 
 class User(Base):
     __tablename__ = "users"
@@ -10,7 +10,7 @@ class User(Base):
     email = Column(String, unique=True, index=True)
     hashed_password = Column(String)
     is_active = Column(Boolean, default=True)
-    created_at = Column(DateTime, default=datetime.utcnow)
+    created_at = Column(DateTime, default=lambda: datetime.now(UTC))
     
     items = relationship("Item", back_populates="owner")
 
@@ -21,6 +21,6 @@ class Item(Base):
     title = Column(String, index=True)
     description = Column(String)
     owner_id = Column(Integer, ForeignKey("users.id"))
-    created_at = Column(DateTime, default=datetime.utcnow)
+    created_at = Column(DateTime, default=lambda: datetime.now(UTC))
     
     owner = relationship("User", back_populates="items") 
